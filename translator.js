@@ -18,7 +18,6 @@ return serverUrl +"?" + "text=" + text;
 function fetchHandler(){
 
 var translateInput = inputText.value;
-console.log("transleate input =  "+ translateInput)
 
 fetch(urlHandler(translateInput)).then(response => response.json ()).then( 
     json =>
