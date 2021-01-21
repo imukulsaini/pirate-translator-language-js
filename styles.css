@@ -64,7 +64,7 @@ header h1{
 }
 
 .translate-section{
-    background-image: url("images/pirate.jpg");
+    background-image: url("pirate.jpg");
     display: block;
     text-align: center;
     background-position: fixed;
