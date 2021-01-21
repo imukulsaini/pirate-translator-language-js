@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+
+*{
+    font-family: 'Trade Winds', cursive;
+    margin: 0;
+    padding:0;
+
+}
+
+:root {
+    --primary-color:black;
+    --secondary-color:red;
+    --third-color :#f8f8ff;
+      }
+
+
+
+body{
+    background-color: var(--primary-color);
+}
+header{
+   
+    background-color: var(--primary-color);
+  
+}
+header h1{
+    color :var(--secondary-color)
+}
+.appName {
+    padding: 1em;
+    display: block;
+    text-align: center;
+}
+
+.textOutput{
+ border: 1px solid black;
+ background-color: var(--third-color);
+}
+
+#translateButton{
+    border: black 2px solid;
+    width:10%;
+    font-size: large;
+    padding: 1%;
+    margin-left: 50%;
+    background-color: var(--primary-color);
+    color:var(--secondary-color)
+    
+    
+     
+    
+
+}
+.textareaStyle{
+    border:2px black solid;
+    display: inline-block;
+    min-height: 24vh;
+    max-height:24vh;
+     min-width: 50%; 
+    max-width: 50%;
+    margin: 1rem;
+   
+
+}
+
+.translate-section{
+    background-image: url("images/pirate.jpg");
+    display: block;
+    text-align: center;
+    background-position: fixed;
+    
+}
+.translate-section p{
+    color:var(--secondary-color);
+    font-size: xx-large;
+
+}
+
+
+.footer{
+color:var(--secondary-color);
+position: fixed;
+bottom: 10px;
+width: 100%;
+padding: 2rem;
+background-color: var(--primary-color);
+text-align: center;
+}
+
+
