@@ -1,10 +1,10 @@
 //reference html to javascript
 
-var inputText = document.querySelector(".textInput");
-var outputText = document.querySelector(".textOutput");
-var translatedButton = document.querySelector("#translateButton");
+const inputText = document.querySelector(".textInput");
+const outputText = document.querySelector(".textOutput");
+const translatedButton = document.querySelector("#translateButton");
 
-var serverUrl = "https://api.funtranslations.com/translate/pirate.json"
+const serverUrl = "https://api.funtranslations.com/translate/pirate.json"
 
 function urlHandler (text){
 
@@ -17,13 +17,13 @@ return serverUrl +"?" + "text=" + text;
 
 function fetchHandler(){
 
-var translateInput = inputText.value;
+const translateInput = inputText.value;
 
 fetch(urlHandler(translateInput)).then(response => response.json ()).then( 
     json =>
     { 
         console.log(json)
-         var translateOutput = json.contents.translated;
+         const translateOutput = json.contents.translated;
          console.log("outputText = " + translateOutput)
          //output
          outputText.innerText = translateOutput; 
